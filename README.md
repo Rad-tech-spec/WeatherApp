@@ -15,4 +15,11 @@ This application has been divided into three javascript files and a HTML file:
 
 ## 4. Weather.html: 
   This is the main file that will make the API call using the fecth jQuery and pass the data to the above methods then publish the outcome. 
+  
+# Laguages and Libraries used:
+* JavaScript (jQuery)
+* CSS (General Formating)
+* BootStrap (Pagination, Formating)
 
+## Authur: 
+> Rad Eshghi
