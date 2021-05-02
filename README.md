@@ -1,5 +1,5 @@
 # About
-This simple application is designed to show the weather condition base on the city and country entered in the search bar.\
+This simple application is designed to show the weather condition base on the city and country entered in the search bar.
 
 This application has been divided into three javascript files and an HTML file:
 
