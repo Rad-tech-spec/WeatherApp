@@ -42,9 +42,10 @@ function getData(x, y)
     
     city = $(y).find("city").attr("name");  
     countryCode = $(y).find("city").find("country").text();
-    status = $(y).find("weather").attr("value");
+    let status = $(y).find("weather").attr("value");
     feels = $(y).find("feels_like").attr("value");
     weatherIcon = $(y).find("weather").attr("icon");
+
 
     // Pass value to dipaly and add into display
     Display(temps,speed,humidity,pressure,coord,sun,status,feels,countryCode, x+1, weatherIcon)
@@ -54,7 +55,11 @@ function getData(x, y)
 // Also extract flag
 function Display(temps,speed,humidity,pressure,coord,sun,status,feels,countryCode, count, icon)
 {
-    $.ajax({ url:'https://restcountries.eu/rest/v2/alpha/' + countryCode,
+
+    console.log(temps + '  1 ' + speed + ' 2 ' +  humidity + ' 3 ' + pressure + ' 4 ' + coord + ' 5 ' + sun + ' 6 ' + status + ' 7 ' + feels + ' 8 ' + countryCode + ' 9 ' + count + ' 10 ' + icon)
+
+
+    $.ajax({ url:'https://restcountries.com/v3.1/alpha/' + countryCode,
     }).done(flag1 =>
     { 
         $("#body").append(`${`<br>
